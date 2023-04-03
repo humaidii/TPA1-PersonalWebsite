@@ -54,6 +54,7 @@ table {
 body {
     background: rgb(0,198,251);
     background: linear-gradient(0deg, rgba(0,198,251,1) 0%, rgba(0,91,234,1) 100%);
+    height: 100%;
 }
 
 /* style for body */
@@ -92,7 +93,7 @@ header {
   /* style for header */
 
   /* style for logo */
-#logo {
+.logo {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -101,7 +102,7 @@ header {
     font-size: 1.5rem;
 }
 
-#logo img {
+.logo img {
     width: 50px;
     height: 50px;
     margin-left: 30px;
@@ -196,8 +197,88 @@ nav ul li a:hover {
     font-size: 25px;
     text-align: center;
   }
-
-  .about-text p {
-    margin-top: 0;
-  }
   /* style for about section */
+  /* style for skills section */
+
+  #skill-page{
+    margin-top: 100px;
+  }
+
+  #skill-page h1 {
+    text-align: center;
+    color: white;
+    font-family: Poppins, sans serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+
+  #skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    font-family: Poppins, sans serif;
+  }
+
+  .card {
+    height: 200px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+  }
+
+  .card img {
+    height: 200px;
+    width: 180px;
+    border-radius: 3px;
+    background-color: rgb(228, 222, 222);
+    padding: 16px;
+    transition: .5s;
+  }
+
+  .card-text {
+    height: 70px;
+    width: 212px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: -70px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+  }
+
+  .card-text h1 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .card-text p {
+    margin: 10px;
+    font-size: 15px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .card:hover {
+    cursor: pointer;
+  }
+
+  .card:hover .card-text {
+    height: 220px;
+    margin-top: -220px;
+    background: black;
+    transform: scale(1.1) rotate(1deg);
+    position: absolute;
+  }
+
+  .card:hover p {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .card:hover img {
+    transform: scale(1.1) rotate(-1deg);
+  }
+  /* style for skills section */
