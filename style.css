@@ -309,6 +309,7 @@ nav ul li a:hover {
 
   /* style for skills section */
 
+  /* style for article section */
   .title-news {
     color: white;
     margin-top: 20px;
@@ -351,6 +352,8 @@ nav ul li a:hover {
   .news p {
     margin-bottom: 10px;
   }
+
+  /* style for skills section */
 
   /* style for footer */
   footer{
