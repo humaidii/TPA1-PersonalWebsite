@@ -146,7 +146,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 516px;
 }
 
 .home-image img {
@@ -161,29 +161,45 @@ nav ul li a:hover {
     margin-left: 30px;
     font-size: 30px;
 }
+
+.home-text button {
+  background-color: #009fff;
+  color: white;
+  width: 130px;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+}
+.home-text button:hover {
+  cursor: pointer;
+  background-color: #888;
+}
+
   /* style for home section */
 
   /* style for about section */
   #about {
+    margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   #about h1 {
     align-self: center;
     margin-bottom: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     font-family: Poppins, sans serif;
     color: white;
     font-weight: bold;
   }
 
   .about-image img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     box-shadow: -2px -2px 27px 0px rgba(0,0,0,1);
     -webkit-box-shadow: -2px -2px 27px 0px rgba(0,0,0,1);
     -moz-box-shadow: -2px -2px 27px 0px rgba(0,0,0,1);
@@ -194,7 +210,7 @@ nav ul li a:hover {
   .about-text {
     color: white;
     font-family: Poppins, sans serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   /* style for about section */
@@ -282,3 +298,45 @@ nav ul li a:hover {
     transform: scale(1.1) rotate(-1deg);
   }
   /* style for skills section */
+
+  /* style for footer */
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #0052d4;
+  }
+
+  footer h1 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+  }
+
+  .socmed {
+    display: flex;
+  }
+
+  .socmed button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin: 5px;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .socmed button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .socmed button:hover {
+    background-color: #009fff;
+    border-radius: 0;
+    transition: 0.5s;
+  }
+  /* style for footer */
